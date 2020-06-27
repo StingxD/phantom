@@ -171,13 +171,6 @@ def error_callback(bot, update, error):
         print(error)
         # handle all other telegram related errors
 
-    keyboard = [[
-        InlineKeyboardButton(text=tld(chat.id, '🥳Add To Group'),
-                             url="https://t.me/sushantsingh_probot?startgroup=true"), InlineKeyboardButton(text="❓ Help", callback_data="help_back")
-        ]]
-    keyboard += [[
-        InlineKeyboardButton(text=tld(chat.id, '👥 Support Group'), url="https://t.me/sushantsupport")
-    ]]
 
 @run_async
 def help_button(bot: Bot, update: Update):
