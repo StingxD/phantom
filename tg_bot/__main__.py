@@ -19,16 +19,15 @@ from tg_bot.modules.helper_funcs.misc import paginate_modules
 PM_START_TEXT = """
 Hey {}, my name is {}! if you have any questions about how to use me use thid command 👉 /help
 
-im a group manager bot maintained by  [this man](tg://user?id={}).
+im a group manager bot maintained by  [this pro](tg://StingxD).
 
-My Orginal code is available to you [CONTACT](https://t.me/THEWIZARD666)
+Special Thanks To This Pro (tg://Rohan_xD)
 
 """
 
 HELP_STRINGS = """
 Hey there! My name is *{}*.
-I'm a Hero For Fun and help admins manage their groups with One Punch! Have a look at the following for an idea of some of \
-the things I can help you with.
+I'm Sushant Singh, i am dead but still alive in your hearts. I will always help you guys!
 
 *Main* commands available:
  - /start: start the bot
@@ -45,10 +44,10 @@ And the following:
 """.format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
 DONATE_STRING = """ Heya, glad to hear you want to donate!
-It took lots of work for [my creator](t.me/THEWIZARD666) to get me to where I am now, and every donation helps \
+It took lots of work for [my creator](t.me/StingxD) to get me to where I am now, and every donation helps \
 motivate him to make me even better. All the donation money will go to a better VPS to host me, and/or beer \
 (see his bio!). He's just a poor student, so every little helps!
-There are two ways of paying him; [PayPal](paypal.me/THEWIZARD666) """
+There are two ways of paying him; [PayPal](paypal.me/StingxD) """
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -140,7 +139,7 @@ def start(bot: Bot, update: Update, args: List[str]):
                 PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_ID),
                 parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True)
     else:
-        update.effective_message.reply_text("Yo, whadup?")
+        update.effective_message.reply_text("Yo, whatsup?")
 
 
 # for test purposes
