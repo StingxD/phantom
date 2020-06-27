@@ -23,6 +23,7 @@ im a group manager bot maintained by  [this pro](tg://StingxD).
 
 Special Thanks To This Pro (tg://Rohan_xD)
 
+Want To Add Me Into Your Chats? [Click Here!](https://t.me/sushantsingh_probot?startgroup=true)
 """
 
 HELP_STRINGS = """
@@ -170,6 +171,13 @@ def error_callback(bot, update, error):
         print(error)
         # handle all other telegram related errors
 
+    keyboard = [[
+        InlineKeyboardButton(text=tld(chat.id, '🥳Add To Group'),
+                             url="https://t.me/sushantsingh_probot?startgroup=true"), InlineKeyboardButton(text="❓ Help", callback_data="help_back")
+        ]]
+    keyboard += [[
+        InlineKeyboardButton(text=tld(chat.id, '👥 Support Group'), url="https://t.me/sushantsupport")
+    ]]
 
 @run_async
 def help_button(bot: Bot, update: Update):
